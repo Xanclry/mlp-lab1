@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://fonts.google.com/specimen/Open+Sans") format("woff2"),
+    url("https://fonts.google.com/specimen/Open+Sans") format("woff");
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", serif
+}
+
+
+.top-cover {
+    background-image: url("images/masthead-background.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 90px;
+}
+
+@media (max-width: 800px) {
+    .top-cover {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+header a {
+    color: #595d63
+}
+
+
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu__item {
+    margin: 3px;
+    list-style: none;
+}
+
+header .menu__item a {
+    text-decoration: none;
+}
+
+main .masthead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .masthead .phone img {
+    height: 700px;
+}
+
+.masthead .titles {
+    height: min-content;
+    color: white;
+}
+
+.masthead .phone {
+    position: relative;
+    top: 150px;
+}
+
+.text .content {
+    color: #707070;
+}
+
+.text .content h2 {
+    color: #222626;
+}
+
+.below {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media (max-width: 800px) {
+    .below {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.text .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.text .content .column {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text .content .column:first-child {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.text .content .column:last-child {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/***************************/
+.box-grid {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.box-grid {
+    font-family: "Microsoft YaHei Light", serif;
+}
+
+.box-grid h2 {
+    font-family: "Microsoft YaHei Light", serif;
+}
+
+.box-grid a {
+    text-decoration: none;
+    color: white;
+    width: max-content;
+}
+
+.box-grid .line {
+    display: flex;
+}
+
+.box-grid section h2 {
+    margin-top: 0;
+}
+
+.box-grid .link-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-grid section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 25px 60px;
+}
+
+.box-grid .box-small, .box-blue, .box-yellow, .box-dark-blue {
+    flex: 0 1 33%;
+    /*width: 400px;*/
+    height: 200px;
+}
+
+.box-grid .box-large {
+    flex: 0 1 66%;
+    /*width: 800px;*/
+    height: 200px;
+    padding-right: 75px;
+    background-image: url("images/large-box-background.png");
+    background-size: cover;
+}
+
+.box-grid .box-small {
+    background-image: url("images/small-box-background.png");
+    background-size: cover;
+}
+
+.box-grid .box-yellow {
+    background: #82ca9c;
+}
+
+.box-grid .box-blue {
+    background: #f5989d;
+}
+
+.box-grid .box-dark-blue {
+    background: #615f7d;
+}
+
+.icon {
+    height: 30px;
+}
+
+.icon-button {
+    background: transparent no-repeat;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

@@ -3,125 +3,151 @@
 <head>
     <meta charset="utf-8">
     <title>take - picture perfect</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__logo">
-        <a href="index.html">
-            <img src="images/header-logo.png" alt="take"/>
-        </a>
-    </div>
-    <nav class="menu">
-        <ul>
-            <li class="menu__item">
-                <a href="#">Menu 1</a>
-            </li>
-            <li class="menu__item">
-                <a href="#">Menu 2</a>
-            </li>
-            <li class="menu__item">
-                <a href="#">Menu 3</a>
-            </li>
-            <li class="menu__item">
-                <a href="#">Menu 4</a>
-            </li>
-        </ul>
+<div class="top-cover">
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="images/header-logo.png" alt="take"/>
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="menu__item">
+                    <a href="#">Menu 1</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Menu 2</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Menu 3</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Menu 4</a>
+                </li>
+            </ul>
 
-    </nav>
-</header>
-<main>
-    <div class="masthead">
-        <div class="titles">
-            <h1 class="titles__main-title">
-                Picture perfect
-            </h1>
-            <h3 class="titles__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vivamus at lacus libero.
-            </h3>
+        </nav>
+    </header>
+    <main>
+        <div class="masthead">
+            <div class="titles">
+                <h1 class="titles__main-title">
+                    Picture perfect
+                </h1>
+                <h3 class="titles__subtitle">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p>
+                        Vivamus at lacus libero.
+                    </p>
+                </h3>
+            </div>
+            <div class="phone">
+                <img src="images/masthead-iphone.png" alt="iphone"/>
+            </div>
         </div>
-        <div class="phone">
-            <img src="images/masthead-iphone.png" alt="iphone"/>
-        </div>
-    </div>
+    </main>
+</div>
+<main class="below">
     <div class="text">
         <h2 class="text__title">
             Start something new
         </h2>
         <div class="content">
-            <p class="content__paragraph">
-                Fusce molestie, nisl convallis maximus varius, leo eros viverra lectus, non efficitur velit enim quis
-                sapien. Vivamus eu ex ante. Phasellus a nibh interdum, sagittis augue id, scelerisque purus. Proin ut
-                nibh
-                condimentum eros ultricies ultricies quis vitae mauris. Vivamus pharetra mollis nulla.
-            </p>
-            <p class="content__paragraph">
-                Cras cursus fringilla fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                fames ac turpis egestas. Nunc in tincidunt nisl, at ultricies est. Quisque pharetra mollis sem id
-                pharetra. Vivamus viverra neque a varius fringilla. Maecenas at feugiat ligula.
-            </p>
-            <p class="content__paragraph">
-                Integer ultrices lorem condimentum magna mollis, rhoncus tincidunt ligula vestibulum. Suspendisse vitae
-                orci tincidunt, dapibus nunc at, egestas arcu.
-            </p>
-            <p class="content__paragraph">
-                Nullam ultricies pellentesque arcu quis volutpat. Proin faucibus augue quis arcu rhoncus, vitae bibendum
-                eros convallis. Mauris ac nulla blandit, dapibus lorem a, consectetur ex.
-            </p>
-            <p class="content__paragraph">
-                In sapien enim, rhoncus a rhoncus eget, tincidunt eget eros. Sed finibus enim a eros tristique, sed
-                pretium eros vulputate.
-            </p>
+            <div class="column">
+                <p class="content__paragraph">
+                    Fusce molestie, nisl convallis maximus varius, leo eros viverra lectus, non efficitur velit enim
+                    quis
+                    sapien. Vivamus eu ex ante. Phasellus a nibh interdum, sagittis augue id, scelerisque purus. Proin
+                    ut
+                    nibh
+                    condimentum eros ultricies ultricies quis vitae mauris. Vivamus pharetra mollis nulla.
+                </p>
+                <p class="content__paragraph">
+                    Cras cursus fringilla fringilla. Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada
+                    fames ac turpis egestas. Nunc in tincidunt nisl, at ultricies est. Quisque pharetra mollis sem id
+                    pharetra. Vivamus viverra neque a varius fringilla. Maecenas at feugiat ligula.
+                </p>
+                <p class="content__paragraph">
+                    Integer ultrices lorem condimentum magna mollis, rhoncus tincidunt ligula vestibulum. Suspendisse
+                    vitae
+                    orci tincidunt, dapibus nunc at, egestas arcu.
+                </p>
+            </div>
+            <div class="column">
+                <p class="content__paragraph">
+                    Nullam ultricies pellentesque arcu quis volutpat. Proin faucibus augue quis arcu rhoncus, vitae
+                    bibendum
+                    eros convallis. Mauris ac nulla blandit, dapibus lorem a, consectetur ex.
+                </p>
+                <p class="content__paragraph">
+                    In sapien enim, rhoncus a rhoncus eget, tincidunt eget eros. Sed finibus enim a eros tristique, sed
+                    pretium eros vulputate.
+                </p>
+            </div>
         </div>
     </div>
     <article class="box-grid">
-        <section class="box-small">
-            <h2 class="box-small__header">
-                Our clients
-            </h2>
-            <p class="box-small__content">
-                In interdum orci ex, eget porttitor est dignissim a.
-            </p>
-            <a class="box-small__link" href="#">Get insights →</a>
-            <button class="box-small__like-button">
-<!--                TODO: heart icon-->
-            </button>
-        </section>
-        <section class="box-large">
-            <h2 class="box-large__header">
-                Sign up & see why
-            </h2>
-            <p class="box-large__content">
-                Aenean ut massa at neque interdum cursus. Aenean mattis mattis suscipit.
-            </p>
-            <a class="box-large__link" href="#">Get started now →</a>
-            <button class="box-large__like-button">
-<!--                TODO: heart icon-->
-            </button>
-        </section>
-        <section class="box-yellow">
-            <h2 class="box-yellow__header">Perfect pictures</h2>
-            <p class="box-yellow__content">
-                Sed metus lectus, pulvinar eu congue non, accumsan et nunc.
-                Sed congue vitae sapien ac ultricies.
-            </p>
-            <a class="box-yellow__link" href="#">Find out more →</a>
-        </section>
-        <section class="box-dark-blue">
-            <h2 class="box-dark-blue__header">Built to last</h2>
-            <p class="box-dark-blue__content">
-                Ut ac vehicula sapien, at suscipit felis.
-                Nunc dolor purus, imperdiet vulputate eleifend eget, lobortis sed ante.
-            </p>
-            <a class="box-dark-blue__link" href="#">Find out more →</a>
-        </section>
-        <section class="box-blue">
-            <h2 class="box-blue__header">Design quality</h2>
-            <p class="box-blue__content">
-                Etiam ultrices, libero vel venenatis vulputate, urna lorem ultricies dui, a placerat est ex eu quam.
-            </p>
-            <a class="box-blue__link" href="#">Find out more →</a>
-        </section>
+        <div class="line">
+            <section class="box-blue">
+                <h2 class="box-blue__header">Design quality</h2>
+                <p class="box-blue__content">
+                    Etiam ultrices, libero vel venenatis vulputate, urna lorem ultricies dui, a placerat est ex eu quam.
+                </p>
+                <a class="box-blue__link" href="#">Find out more →</a>
+            </section>
+            <section class="box-dark-blue">
+                <h2 class="box-dark-blue__header">Built to last</h2>
+                <p class="box-dark-blue__content">
+                    Ut ac vehicula sapien, at suscipit felis.
+                    Nunc dolor purus, imperdiet vulputate eleifend eget, lobortis sed ante.
+                </p>
+                <a class="box-dark-blue__link" href="#">Find out more →</a>
+            </section>
+            <section class="box-small">
+                <h2 class="box-small__header">
+                    Our clients
+                </h2>
+                <p class="box-small__content">
+                    In interdum orci ex, eget porttitor est dignissim a.
+                </p>
+                <div class="link-line">
+                    <a class="box-small__link" href="#">Get insights →</a>
+                    <button class="box-small__like-button icon-button">
+                        <img class="icon" src="images/heart.png" alt="♡">
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="line">
+            <section class="box-large">
+                <h2 class="box-large__header">
+                    Sign up & see why
+                </h2>
+                <p class="box-large__content">
+                    Aenean ut massa at neque interdum cursus. Aenean mattis mattis suscipit.
+                </p>
+                <div class="link-line">
+                    <a class="box-large__link" href="#">Get started now →</a>
+                    <button class="box-large__like-button icon-button">
+                        <img class="icon" src="images/heart.png" alt="♡">
+                    </button>
+                </div>
+            </section>
+            <section class="box-yellow">
+                <h2 class="box-yellow__header">Perfect pictures</h2>
+                <p class="box-yellow__content">
+                    Sed metus lectus, pulvinar eu congue non, accumsan et nunc.
+                    Sed congue vitae sapien ac ultricies.
+                </p>
+                <a class="box-yellow__link" href="#">Find out more →</a>
+            </section>
+        </div>
     </article>
     <article class="four-col">
         <h2 class="four-col__title">A look at the details</h2>
@@ -291,7 +317,7 @@
             <form>
                 <input class="email-form__input-field" type="email">
                 <button class="email-form__submit-button" type="submit">
-<!--                    TODO: checked icon-->
+                    <!--                    TODO: checked icon-->
                 </button>
             </form>
         </div>
