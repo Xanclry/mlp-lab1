@@ -6,9 +6,17 @@
 
 body {
     margin: 0;
-    font-family: "Open Sans", serif
+    font-family: "Open Sans", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 100%;
 }
 
+.main-cover {
+    /*flex: 0 1 100%;*/
+    width: 1920px;
+}
 
 .top-cover {
     background-image: url("images/masthead-background.png");
@@ -34,6 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    font-family: "Microsoft YaHei Light", serif;
 }
 
 header a {
@@ -60,6 +69,7 @@ main .masthead {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-family: "Microsoft YaHei Light", serif;
 }
 
 main .masthead .phone img {
@@ -74,6 +84,11 @@ main .masthead .phone img {
 .masthead .phone {
     position: relative;
     top: 150px;
+}
+
+.text {
+    font-family: "Microsoft YaHei Light", serif;
+
 }
 
 .text .content {
@@ -259,7 +274,7 @@ main .masthead .phone img {
     background-size: cover;
     background-position: center;
     height: 800px;
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -289,4 +304,46 @@ main .masthead .phone img {
         padding-right: 20px;
         padding-left: 20px;
     }
+}
+
+/****************************/
+
+.colour-layout {
+    background-color: #82ca9c;
+    padding: 80px 20% 100px;
+}
+
+@media (max-width: 900px) {
+    .colour-layout {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.colour {
+    color: white;
+    font-family: "Microsoft YaHei Light", serif;
+}
+
+.colour h2 {
+    margin-top: 0;
+}
+
+.colour .columns {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.colour .columns .column {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.colour .columns .column:first-child {
+    margin-left: 0;
+}
+
+.colour .columns .column:last-child {
+    margin-right: 0;
 }
