@@ -14,7 +14,6 @@ body {
 }
 
 .main-cover {
-    /*flex: 0 1 100%;*/
     width: 1920px;
 }
 
@@ -338,6 +337,7 @@ main .masthead .phone img {
 .colour .columns .column {
     margin-left: 10px;
     margin-right: 10px;
+    flex: 0 0 33%;
 }
 
 .colour .columns .column:first-child {
@@ -347,3 +347,181 @@ main .masthead .phone img {
 .colour .columns .column:last-child {
     margin-right: 0;
 }
+
+/***********************/
+
+.buying-layout {
+    padding: 100px 20% 120px;
+    background-color: #f6f7fa;
+}
+
+@media (max-width: 900px) {
+    .buying-layout {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.buying {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Microsoft YaHei Light", serif;
+    color: #707070;
+}
+
+.buying .item h3 {
+    font-size: 25px;
+    color: #5f5f5f;
+}
+
+.buying .item .item__status {
+    border-radius: 7px;
+    padding: 4px 20px;
+    background-color: #82ca9c;
+    color: white;
+}
+
+.buying .item .item__status_legacy {
+    background-color: #e1e1e1;
+    font-family: "Microsoft YaHei", serif;
+}
+
+.buying .item .item__status_most-popular {
+    background-color: #bd8cbf;
+}
+
+.buying .item {
+    width: 300px;
+    padding: 35px;
+}
+
+.buying .item .platforms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buying .item .platforms .platforms__item {
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.buying .item .platforms .platforms__item:first-child {
+    margin-left: 0;
+}
+
+.buying .item .platforms .platforms__item:last-child {
+    margin-right: 0;
+}
+
+.buying .item__buy-button {
+    background-color: #82ca9c;
+    padding: 14px 33px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.buying .item__buy-button:focus {
+    outline: none;
+}
+
+.buying .item_most-popular {
+    background-color: white;
+    box-shadow: 0 0 50px 1px #c2c2c2;
+}
+
+/**************************/
+
+footer {
+    background-color: #192431;
+    font-family: "Microsoft YaHei Light", serif;
+    color: white;
+    padding: 120px 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+@media (max-width: 900px ){
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > * {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+footer > *:first-child {
+    margin-left: 0;
+}
+footer > *:last-child {
+    margin-right: 0;
+}
+
+footer .content .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .content .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .content .menu li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+footer .content .menu a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .subscribe-box .email-form {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .subscribe-box .email-form__input-field {
+    height: 35px;
+    width: 250px;
+    background-color: #f6f7fa;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer .subscribe-box .email-form__input-field:focus {
+    outline: none;
+}
+
+footer .subscribe-box .email-form__submit-button {
+    width: 40px;
+    background-color: #82ca9c;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+footer .subscribe-box .email-form__submit-button:checked {
+    outline: none;
+}
+
+footer .subscribe-box .description {
+    color: #364455;
+}
+

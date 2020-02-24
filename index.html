@@ -244,12 +244,12 @@
             </div>
         </article>
     </main>
-    <main class="below">
+    <main class="buying-layout">
         <div class="buying">
-            <div class="item">
-                <div class="item__status">
+            <div class="item item_legacy">
+                <span class="item__status item__status_legacy">
                     LEGACY
-                </div>
+                </span>
                 <div class="description">
                     <h3 class="description__title">Go it solo</h3>
                     <p class="description__content">
@@ -268,10 +268,10 @@
 
                 </div>
             </div>
-            <div class="item">
-                <div class="item__status">
+            <div class="item item_most-popular">
+                <span class="item__status item__status_most-popular">
                     MOST POPULAR
-                </div>
+                </span>
                 <div class="description">
                     <h3 class="description__title">Team plan</h3>
                     <p class="description__content">
@@ -337,14 +337,13 @@
         </div>
         <div class="subscribe-box">
             <h4 class="subscribe-box__title">Stay in touch</h4>
-            <div class="email-form">
-                <form>
-                    <input class="email-form__input-field" type="email">
-                    <button class="email-form__submit-button" type="submit">
-                        <!--                    TODO: checked icon-->
-                    </button>
-                </form>
-            </div>
+            <form class="email-form">
+                <input class="email-form__input-field" type="email">
+                <button class="email-form__submit-button icon-button" type="submit">
+                    <img class="icon" src="images/checked.png" alt="qwe"/>
+                </button>
+            </form>
+
             <p class="description">
                 We don't send spam. Actually, who we are kidding,
                 we'll spam the shit out of your inbox
