@@ -20,7 +20,7 @@ body {
     margin-bottom: 90px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .top-cover {
         padding-left: 20px;
         padding-right: 20px;
@@ -89,7 +89,7 @@ main .masthead .phone img {
     margin-right: 20%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .below {
         margin-left: 20px;
         margin-right: 20px;
@@ -203,4 +203,90 @@ main .masthead .phone img {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+/***************************************/
+.four-col {
+    font-family: "Microsoft YaHei Light", serif;
+    color: #707070;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.four-col h2 {
+    color: #3a3e3e;
+    margin-bottom: 0;
+}
+
+.four-col h3 {
+    margin-top: 10px;
+    color: #5f5f5f;
+}
+
+.four-col .column {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.four-col .column:first-child {
+    margin-left: 0;
+}
+
+.four-col .column:last-child {
+    margin-right: 0;
+}
+
+.four-col .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.four-col .columns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/************************/
+.full-image {
+    background-image: url("images/steering-wheel.png");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 20%;
+    padding-left: 20%;
+    color: white;
+    font-family: "Microsoft YaHei Light", serif;
+}
+
+.full-image .content a {
+    text-decoration: none;
+    color:white;
+}
+
+.full-image .content {
+    margin-bottom: 150px;
+    width: 300px;
+}
+
+.full-image .content * {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .full-image {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
