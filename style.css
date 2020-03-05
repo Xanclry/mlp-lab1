@@ -49,7 +49,6 @@ header a {
 }
 
 
-
 header .menu ul {
     display: flex;
 }
@@ -63,7 +62,7 @@ header .menu__item a {
     text-decoration: none;
 }
 
-main .masthead {
+.masthead {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,7 +70,7 @@ main .masthead {
     font-family: "Microsoft YaHei Light", serif;
 }
 
-main .masthead .phone img {
+.masthead .phone img {
     height: 700px;
 }
 
@@ -230,7 +229,6 @@ main .masthead .phone img {
 }
 
 
-
 .four-col h2 {
     color: #3a3e3e;
     margin-bottom: 0;
@@ -244,6 +242,7 @@ main .masthead .phone img {
 .four-col .column {
     margin-left: 10px;
     margin-right: 10px;
+    flex: 0 1 25%
 }
 
 .four-col .column:first-child {
@@ -285,7 +284,7 @@ main .masthead .phone img {
 
 .full-image .content a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .full-image .content {
@@ -331,7 +330,7 @@ main .masthead .phone img {
 .colour .columns {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .colour .columns .column {
@@ -424,6 +423,7 @@ main .masthead .phone img {
     color: white;
     cursor: pointer;
 }
+
 .buying .item__buy-button:focus {
     outline: none;
 }
@@ -447,7 +447,7 @@ footer {
 
 }
 
-@media (max-width: 900px ){
+@media (max-width: 900px ) {
     footer {
         padding-left: 20px;
         padding-right: 20px;
@@ -467,6 +467,7 @@ footer > * {
 footer > *:first-child {
     margin-left: 0;
 }
+
 footer > *:last-child {
     margin-right: 0;
 }
@@ -506,6 +507,7 @@ footer .subscribe-box .email-form__input-field {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 footer .subscribe-box .email-form__input-field:focus {
     outline: none;
 }
@@ -517,6 +519,7 @@ footer .subscribe-box .email-form__submit-button {
     border-radius: 0 2px 2px 0;
     cursor: pointer;
 }
+
 footer .subscribe-box .email-form__submit-button:checked {
     outline: none;
 }
@@ -524,4 +527,3 @@ footer .subscribe-box .email-form__submit-button:checked {
 footer .subscribe-box .description {
     color: #364455;
 }
-
