@@ -133,9 +133,9 @@ header .menu__item a {
 
 /***************************/
 .box-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     color: white;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .box-grid {
@@ -152,10 +152,6 @@ header .menu__item a {
     width: max-content;
 }
 
-.box-grid .line {
-    display: flex;
-}
-
 .box-grid section h2 {
     margin-top: 0;
 }
@@ -165,26 +161,19 @@ header .menu__item a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
 .box-grid section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 45px 25px 60px;
-}
-
-.box-grid .box-small, .box-blue, .box-yellow, .box-dark-blue {
-    flex: 0 1 33%;
-    /*width: 400px;*/
-    height: 200px;
+    padding: 45px 25px 50px;
 }
 
 .box-grid .box-large {
-    flex: 0 1 66%;
-    /*width: 800px;*/
-    height: 200px;
-    padding-right: 75px;
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-image: url("images/large-box-background.png");
     background-size: cover;
 }
@@ -207,7 +196,7 @@ header .menu__item a {
 }
 
 .icon {
-    height: 30px;
+    height: 15px;
 }
 
 .icon-button {
