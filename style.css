@@ -1,12 +1,5 @@
-@font-face {
-    font-family: "Open Sans";
-    src: url("https://fonts.google.com/specimen/Open+Sans") format("woff2"),
-    url("https://fonts.google.com/specimen/Open+Sans") format("woff");
-}
-
 body {
     margin: 0;
-    font-family: "Open Sans", serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,11 +30,9 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    font-family: "Microsoft YaHei Light", serif;
 }
 
 header a {
@@ -62,12 +53,15 @@ header .menu__item a {
     text-decoration: none;
 }
 
+/*************************************/
+
 .masthead {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-family: "Microsoft YaHei Light", serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-weight: 300;
 }
 
 .masthead .phone img {
@@ -84,9 +78,16 @@ header .menu__item a {
     top: 150px;
 }
 
-.text {
-    font-family: "Microsoft YaHei Light", serif;
+.masthead .titles__main-title {
+    font-size: 50px;
+}
 
+.masthead .titles__subtitle {
+    font-size: 18px;
+}
+
+.text {
+    /*font-family: 'Open Sans', sans-serif;*/
 }
 
 .text .content {
@@ -136,14 +137,6 @@ header .menu__item a {
     display: grid;
     color: white;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.box-grid {
-    font-family: "Microsoft YaHei Light", serif;
-}
-
-.box-grid h2 {
-    font-family: "Microsoft YaHei Light", serif;
 }
 
 .box-grid a {
@@ -209,7 +202,6 @@ header .menu__item a {
 
 /***************************************/
 .four-col {
-    font-family: "Microsoft YaHei Light", serif;
     color: #707070;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -261,14 +253,12 @@ header .menu__item a {
     background-size: cover;
     background-position: center;
     height: 800px;
-    /*width: 100%;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-right: 20%;
     padding-left: 20%;
     color: white;
-    font-family: "Microsoft YaHei Light", serif;
 }
 
 .full-image .content a {
@@ -295,6 +285,109 @@ header .menu__item a {
 
 /****************************/
 
+.carousel {
+    position: relative;
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #a8a8a8;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #717171;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #505050;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33), -1px 0 2px rgba(255, 255, 255, 0);
+}
+
+/*****************************/
+
 .colour-layout {
     background-color: #82ca9c;
     padding: 80px 20% 100px;
@@ -309,7 +402,6 @@ header .menu__item a {
 
 .colour {
     color: white;
-    font-family: "Microsoft YaHei Light", serif;
 }
 
 .colour h2 {
@@ -354,7 +446,6 @@ header .menu__item a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: "Microsoft YaHei Light", serif;
     color: #707070;
 }
 
@@ -372,7 +463,6 @@ header .menu__item a {
 
 .buying .item .item__status_legacy {
     background-color: #e1e1e1;
-    font-family: "Microsoft YaHei", serif;
 }
 
 .buying .item .item__status_most-popular {
@@ -426,7 +516,6 @@ header .menu__item a {
 
 footer {
     background-color: #192431;
-    font-family: "Microsoft YaHei Light", serif;
     color: white;
     padding: 120px 20%;
     display: flex;
