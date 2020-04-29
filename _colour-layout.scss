@@ -1,0 +1,44 @@
+.colour-layout {
+    background-color: #82ca9c;
+    padding: 80px 20% 100px;
+    transition: $transition;
+    @media (max-width: $firstBreakpoint) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.colour {
+    color: white;
+}
+
+.colour h2 {
+    margin-top: 0;
+}
+
+.colour .columns {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $mobileBreakpoint) {
+        flex-direction: column;
+    }
+
+}
+
+.colour .columns .column {
+    margin-left: 10px;
+    margin-right: 10px;
+    @media (max-width: $mobileBreakpoint) {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    flex: 0 0 33%;
+}
+
+.colour .columns .column:first-child {
+    margin-left: 0;
+}
+
+.colour .columns .column:last-child {
+    margin-right: 0;
+}
