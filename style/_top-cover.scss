@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+    a {
+        color: #595d63
+    }
+
+    @media (max-width: $mobileBreakpoint) {
+        .header__logo img {
+            height: 70px;
+            margin-top: 5px;
+        }
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu__item {
+        margin: 3px;
+        list-style: none;
+        @media (max-width: $mobileBreakpoint) {
+            margin-right: 20px;
+        }
+    }
+
+    .menu__item a {
+        text-decoration: none;
+        @media (max-width: $mobileBreakpoint) {
+            font-size: 30px;
+        }
+    }
+    @media (max-width: $mobileBreakpoint) {
+        .menu__item a:focus {
+            color: red;
+        }
+    }
+}
+
+.top-cover {
+    background-image: url("assets/masthead-background.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    transition: $transition;
+    @media (max-width: $firstBreakpoint) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    margin-bottom: 90px;
+}
+
+
+/*************************************/
+
+.masthead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+
+    .phone img {
+        height: 700px;
+        @media (max-width: $mobileBreakpoint) {
+            height: 600px;
+        }
+    }
+
+    .titles {
+        height: min-content;
+        color: white;
+    }
+
+    .phone {
+        position: relative;
+        top: 150px;
+        transition: $transition;
+        @media (max-width: $firstBreakpoint) {
+            top: 100px;
+            right: 50px;
+        }
+    }
+
+    .titles__main-title {
+        font-size: 50px;
+    }
+
+    .titles__subtitle {
+        font-size: 18px;
+    }
+}
+
+
+.text .content {
+    color: #707070;
+}
+
+.text .content h2 {
+    color: #222626;
+}
+

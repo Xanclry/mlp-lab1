@@ -1,0 +1,54 @@
+.colour-layout {
+    background-color: #82ca9c;
+    padding: 80px 20% 100px;
+    transition: $transition;
+    @media (max-width: $firstBreakpoint) {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
+}
+
+.colour {
+    color: white;
+
+    h2 {
+        margin-top: 0;
+        @media (max-width: $mobileBreakpoint) {
+            font-size: 40px;
+        }
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+        @media (max-width: $mobileBreakpoint) {
+            flex-direction: column;
+        }
+
+    }
+
+    .columns .column {
+        margin-left: 10px;
+        margin-right: 10px;
+        @media (max-width: $mobileBreakpoint) {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        flex: 0 0 33%;
+        h4 {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+
+    .columns .column:first-child {
+        margin-left: 0;
+    }
+
+    .columns .column:last-child {
+        margin-right: 0;
+    }
+
+}

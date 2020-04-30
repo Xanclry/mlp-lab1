@@ -65,7 +65,7 @@ header .menu__item a {
 }
 
 .top-cover {
-  background-image: url("images/masthead-background.png");
+  background-image: url("assets/masthead-background.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto;
@@ -303,7 +303,7 @@ header .menu__item a {
 }
 
 .box-grid .box-large {
-  background-image: url("images/large-box-background.png");
+  background-image: url("assets/large-box-background.png");
   background-size: cover;
 }
 
@@ -316,7 +316,7 @@ header .menu__item a {
 }
 
 .box-grid .box-small {
-  background-image: url("images/small-box-background.png");
+  background-image: url("assets/small-box-background.png");
   background-size: cover;
 }
 
@@ -514,7 +514,7 @@ header .menu__item a {
 }
 
 .full-image {
-  background-image: url("images/steering-wheel.png");
+  background-image: url("assets/steering-wheel.png");
   background-size: cover;
   background-position: center;
   -webkit-transition: 0.3s ease-in;
@@ -606,14 +606,14 @@ header .menu__item a {
   color: white;
 }
 
+.colour h2 {
+  margin-top: 0;
+}
+
 @media (max-width: 800px) {
   .colour h2 {
     font-size: 40px;
   }
-}
-
-.colour h2 {
-  margin-top: 0;
 }
 
 .colour .columns {
@@ -938,7 +938,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .main-cover {

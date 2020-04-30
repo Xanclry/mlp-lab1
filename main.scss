@@ -2,13 +2,13 @@ $firstBreakpoint: 1100px;
 $mobileBreakpoint: 800px;
 $transition: 0.3s ease-in;
 
-@import 'fonts';
-@import 'top-cover';
-@import 'below';
-@import 'full-image';
-@import 'colour-layout';
-@import 'buying-layout';
-@import 'footer';
+@import 'style/fonts';
+@import 'style/top-cover';
+@import 'style/below';
+@import 'style/full-image';
+@import 'style/colour-layout';
+@import 'style/buying-layout';
+@import 'style/footer';
 
 body {
     margin: 0;
@@ -16,7 +16,7 @@ body {
     flex-direction: row;
     justify-content: center;
     flex: 0 0 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 .main-cover {
