@@ -9,6 +9,12 @@ header a {
     color: #595d63
 }
 
+header .header__logo img {
+    @media (max-width: $mobileBreakpoint) {
+        height: 70px;
+        margin-top: 5px;
+    }
+}
 
 header .menu ul {
     display: flex;
@@ -16,11 +22,22 @@ header .menu ul {
 
 header .menu__item {
     margin: 3px;
+    @media (max-width: $mobileBreakpoint) {
+        margin-right: 20px;
+    }
     list-style: none;
 }
 
 header .menu__item a {
     text-decoration: none;
+    @media (max-width: $mobileBreakpoint) {
+        font-size: 30px;
+    }
+}
+@media (max-width: $mobileBreakpoint) {
+    header .menu__item a:focus {
+        color: red;
+    }
 }
 
 .top-cover {

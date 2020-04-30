@@ -5,11 +5,19 @@
     @media (max-width: $firstBreakpoint) {
         padding-left: 40px;
         padding-right: 40px;
+        padding-bottom: 50px;
+        padding-top: 60px;
     }
 }
 
 .colour {
     color: white;
+}
+
+.colour h2 {
+    @media (max-width: $mobileBreakpoint) {
+        font-size: 40px;
+    }
 }
 
 .colour h2 {
@@ -33,6 +41,10 @@
         margin-bottom: 20px;
     }
     flex: 0 0 33%;
+    h4 {
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
 
 .colour .columns .column:first-child {

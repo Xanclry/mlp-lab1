@@ -23,6 +23,12 @@ footer .content {
     flex-direction: column;
 }
 
+footer h4 {
+    @media (max-width: $mobileBreakpoint) {
+        font-size: 22px;
+    }
+}
+
 footer > * {
     margin-right: 60px;
     margin-left: 60px;
@@ -73,6 +79,7 @@ footer .subscribe-box .email-form__input-field {
     border-radius: 2px 0 0 2px;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 23px;
 }
 
 footer .subscribe-box .email-form__input-field:focus {

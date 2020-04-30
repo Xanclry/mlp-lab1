@@ -3,7 +3,6 @@ $mobileBreakpoint: 800px;
 $transition: 0.3s ease-in;
 
 @import 'fonts';
-@import 'style';
 @import 'top-cover';
 @import 'below';
 @import 'full-image';
@@ -26,6 +25,9 @@ body {
 
 .icon {
     height: 15px;
+    @media (max-width: $mobileBreakpoint) {
+        height: 30px;
+    }
 }
 
 .icon-button {
