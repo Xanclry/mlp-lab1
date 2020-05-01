@@ -19,6 +19,23 @@ body {
     overflow-x: hidden;
 }
 
+.dark-wrap {
+    position: absolute;
+    display: none;
+    transition: $transition;
+}
+
+@media (max-width: $mobileBreakpoint) {
+    .dark-wrap.active {
+        transition: $transition;
+        display: unset;
+        background-color: black;
+        opacity: 70%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .main-cover {
     width: 1920px;
 }
