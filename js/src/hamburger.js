@@ -13,5 +13,10 @@ let toggleHamburger = function () {
 
 $(".hamburger-menu__icon").click(toggleHamburger);
 
-$(".menu__item").click(toggleHamburger);
+$(".menu__item").click(function () {
+    if ($(".hamburger-menu").hasClass('active')) {
+        toggleHamburger()
+    }
+});
+
 
