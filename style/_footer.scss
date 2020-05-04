@@ -1,0 +1,105 @@
+footer {
+    background-color: #192431;
+    color: white;
+    padding: 120px 20%;
+    transition: $transition;
+    @media (max-width: $firstBreakpoint) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: $mobileBreakpoint) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+    align-items: flex-start;
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h4 {
+        @media (max-width: $mobileBreakpoint) {
+            font-size: 22px;
+        }
+    }
+
+    > * {
+        margin-right: 60px;
+        margin-left: 60px;
+        @media (max-width: $mobileBreakpoint) {
+            margin: 0;
+        }
+    }
+
+    > *:first-child {
+        margin-left: 0;
+    }
+
+    > *:last-child {
+        margin-right: 0;
+    }
+
+    .content .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content .menu li {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .content .menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .subscribe-box .email-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subscribe-box .email-form__input-field {
+        height: 35px;
+        width: 250px;
+        background-color: #f6f7fa;
+        border: none;
+        border-radius: 2px 0 0 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 23px;
+    }
+
+    .subscribe-box .email-form__input-field:focus {
+        outline: none;
+    }
+
+    .subscribe-box .email-form__submit-button {
+        width: 40px;
+        background-color: #82ca9c;
+        border: none;
+        border-radius: 0 2px 2px 0;
+        cursor: pointer;
+    }
+
+    .subscribe-box .email-form__submit-button:checked {
+        outline: none;
+    }
+
+    .subscribe-box .description {
+        color: #364455;
+    }
+
+}
